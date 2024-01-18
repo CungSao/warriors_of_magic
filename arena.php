@@ -36,7 +36,8 @@ function arena() {
                 $player->update();
     
                 echo "<div class='centers'>
-                    You gained {$money_gain} money!
+                    You gained {$money_gain} money!<br>
+                    You currently have {$player->money}$
                 </div>";
             }
             elseif ($winner == 'opponent') {
