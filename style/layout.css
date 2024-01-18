@@ -1,0 +1,125 @@
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    background-color: rgb(140, 140, 140);
+}
+
+#content {
+    width: 1000px;
+    min-height: 600px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+
+    background-color: rgb(40, 40, 40);
+
+    /* border: 5px solid rgb(30, 30, 30); */
+    border: 5px solid rgb(30, 140, 30);
+    /* border: 5px solid rgb(30, 30, 140); */
+
+    color: rgb(220, 220, 220);
+}
+
+h3 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    text-align: center;
+
+    font-size: 30px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+#menu {
+    margin: 0px;
+    padding: 4px;
+    background-color: rgb(50, 50, 50);
+}
+
+#menu ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+#menu li {
+    display: inline-block;
+    margin-right: 10px;
+    list-style: none;
+}
+
+#menu a {
+    display: block;
+    min-width: 125px;
+    padding: 4px;
+
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+
+    background-color: rgb(220, 220, 220);
+}
+
+#menu a:hover {
+    background-color: rgb(170, 30, 30);
+}
+
+
+
+/* Page content styles */
+.formContainer {
+    margin-top: 15px;
+    text-align: center;
+
+    padding: 10px;
+
+    background-color: rgb(50, 50, 50);
+    border-radius: 5px;
+}
+
+.formContainer input {
+    margin-top: 2px;
+}
+
+p.pageTitle {
+    margin-top: 3px;
+    margin-bottom: 2px;
+    padding: 1px;
+    background-color: rgb(90, 140, 140);
+}
+
+label {
+    display: inline-block;
+}
+
+.center {
+    text-align: center;
+}
+
+.centerDiv {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table {
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+    border: 1px solid rgb(0, 0, 0);
+    border-collapse: collapse;
+    border-spacing: 0px;
+}
+
+th {
+    background-color: rgb(20, 20, 20);
+    border: 1px solid rgb(0, 0, 0);
+    color: rgb(220, 220, 220);
+}
+
+td {
+    border: 1px solid rgb(0, 0, 0);
+    color: rgb(220, 220, 220);
+}
