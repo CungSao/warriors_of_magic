@@ -29,9 +29,11 @@ function attackShop() {
                 throw new Exception("<p>You don't have enough money to buy this attack!</p>");
             }
 
+            $attack = $attacks[$attack_id];
+
             // Purchase technique
             $player->money -= $attacks[$attack_id]['purchase_cost'];
-            $player->attacks[$attack_id] = [];
+            $player->attacks[$attack_id] = [$attack['combat_text'], $attack['power']];
             $player->update();
 
             echo "<p>Attack purchased!</p>";
