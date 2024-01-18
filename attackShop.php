@@ -23,10 +23,10 @@ function attackShop() {
             //     throw new Exception("Invalid attack");
             // }
             if (isset($player->attacks[$attack_id])) {
-                throw new Exception("You already have this attack!");
+                throw new Exception("<p>You already have this attack!</p>");
             }
             if ($player->money < $attacks[$attack_id]['purchase_cost']) {
-                throw new Exception("You don't have enough money to buy this attack!");
+                throw new Exception("<p>You don't have enough money to buy this attack!</p>");
             }
 
             // Purchase technique
@@ -34,7 +34,7 @@ function attackShop() {
             $player->attacks[$attack_id] = [];
             $player->update();
 
-            echo "Attack purchased!";
+            echo "<p>Attack purchased!</p>";
             
         } catch (Exception $e) {
             echo $e->getMessage();
@@ -42,12 +42,13 @@ function attackShop() {
     } 
 
     // Display form
+    $label_width = 20;
     echo "<table class='formContainer centerDiv center' style='width:500px;'>
         <tr>
-            <th style='width: 30%'>Name</th>
-            <th style='width: 20%;'>Type</th>
-            <th style='width: 35%;'>Price</th>
-            <th style='width: 15%;'>&nbsp;</th>
+            <th style='width:{$label_width}%;'>Name</th>
+            <th style='width:{$label_width}%;'>Type</th>
+            <th style='width:{$label_width}%;'>Price</th>
+            <th style='width:{$label_width}%;'>&nbsp;</th>
         </tr>";
         foreach ($attacks as $id => $attack) {
             if (isset($player->attacks[$id])) {
